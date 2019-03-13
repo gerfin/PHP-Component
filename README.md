@@ -24,6 +24,7 @@ class Controller extends SimpleAOP{
  */
  
 class Demo{
+
     function font() {
     
         echo "font function running...".PHP_EOL;
