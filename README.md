@@ -6,11 +6,16 @@
 // Can define or reference other classes, such as log classes, permission classes
 
 class Demo{
+
     function font() {
+    
         echo "font function running...".PHP_EOL;
+        
     }
     function back() {
+    
         echo "back function running...".PHP_EOL;
+        
     }
 }
 
