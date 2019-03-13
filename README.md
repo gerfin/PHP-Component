@@ -1,17 +1,35 @@
-# PHP-Component
-* 提供简单的AOP功能  * Provides simple AOP functionality
+// ---------------------------------------------DEMO EXPLAIN------------------------------------------------------------
+/**
+ * 在原本执行的函数的前面和后面加上一些标记符号，使得函数在执行前执行前置函数，函数执行后执行后置函数;实现简单的AOP
+ 
+ * Add some markup symbols before and after the function that is executed,
+ * so that the function executes the pre-function before execution,
+ * and executes the post-function after the function is executed; realizes simple AOP
+ */
+ 
+ 
+class Controller extends SimpleAOP{
 
-// 可以定义或者引用其他的类，如日志类，权限类
+    public function add() {
+    
+        echo "to do add function".PHP_EOL;
+        
+    }
+    
+}
 
-// Can define or reference other classes, such as log classes, permission classes
-
+/**
+ * 提供外围函数，提供给Controller类使用
+ * Provide peripheral functions for use by the Controller class
+ */
+ 
 class Demo{
-
     function font() {
     
         echo "font function running...".PHP_EOL;
         
     }
+    
     function back() {
     
         echo "back function running...".PHP_EOL;
