@@ -2,6 +2,7 @@
 * 提供简单的AOP功能  * Provides simple AOP functionality
 
 // 可以定义或者引用其他的类，如日志类，权限类
+
 // Can define or reference other classes, such as log classes, permission classes
 class Demo{
     function font() {
